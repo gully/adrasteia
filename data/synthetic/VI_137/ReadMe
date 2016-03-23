@@ -1,0 +1,237 @@
+VI/137            GaiaSimu Universe Model Snapshot               (Robin+, 2012)
+================================================================================
+GaiaSimu Universe Model Snapshot.
+   Robin A.C., Luri X., Reyle C., Isasi, Grux E., Blanco S., Arenou F.,
+   Babusiaux C., Belcheva M., Drimmel R., Jordi C., Krone-Martins A.,
+   Masana E., Mauduit J.C., Mignard F., Mowlawi N., Rocca-Volmerange B.,
+   Sartoretti P., Slezak E., Sozzetti A.
+  <Astron. Astrophys. 543, A100 (2012)> (arXiv:1202.0132)
+  =2012A&A...543A.100R
+================================================================================
+ADC_Keywords: Surveys ; Positional data ; Galaxy catalogs 
+Keywords: Astrophysics - Galaxy Astrophysics, Astrophysics
+          Cosmology and Extragalactic Astrophysics, Astrophysics
+          Instrumentation and Methods for Astrophysics, Astrophysics
+          Solar and Stellar Astrophysics
+
+Abstract:
+
+    Context: This study has been developed in the framework of the
+    computational simulations that are executed for the preparation
+    of the ESA Gaia astrometric mission.
+
+    Aims: We focus on describing the objects and characteristics that
+    Gaia will potentially observe without taking into consideration
+    instrumental effects (detection efficiency, observing errors).
+
+    Methods: The theoretical Universe Model prepared for the Gaia
+    simulation has been statistically analysed at a given time.
+    Ingredients of the model are described, with the greatest emphasis on
+    the stellar content, the double and multiple stars, and variability.
+
+    Results: In this simulation the errors have not yet been included.
+    Hence we estimated the number of objects and their theoretical
+    photometric, astrometric and spectroscopic characteristics if they
+    are perfectly detected.We show that Gaia will be able to potentially
+    observe 1.1 billion of stars (single or part of multiple star systems)
+    of which about 2% are variable stars and 3% have one or two
+    exoplanets. At the extragalactic level, observations will be
+    potentially composed of several millions of galaxies, half a million
+    to 1 million quasars and about 50,000 supernovae that will occur
+    during the five years of the mission.
+
+Description:
+    GUMS-10 is the 10th version of the Gaia Universe Model Snapshot, a
+    simulation of the expected contents of the Gaia catalogue run at
+    the MareNostrum supercomputer. The simulated catalogue will be made
+    publicly available by the DPAC on the Gaia portal of the ESA web site
+    http://www.rssd.esa.int/gaia/
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName   Lrecl  Records  Explanations
+--------------------------------------------------------------------------------
+ReadMe         80        .  This file
+gum_mw.sam    364     1000  Gaia Universe Model Snapshot (GUMS): Milky Way stars
+                            (among 2,143,475,885 stars)
+gum_lmc.sam   364     1000  Gaia Universe Model Snapshot (GUMS): LMC stars
+                            (among 7,559,826 stars)
+gum_smc.sam   364     1000  Gaia Universe Model Snapshot (GUMS): SMC stars
+                            (among 1,250,384 stars)
+gum_gal.sam   240     1000  Gaia Universe Model Snapshot (GUMS) (galaxies)
+                            (among 37,831,197 sources)
+gum_qso.dat   186   979315  Gaia Universe Model Snapshot (GUMS) (quasars)
+gum_sn.dat    160    49814  Gaia Universe Model Snapshot (GUMS (supernovae)
+--------------------------------------------------------------------------------
+
+See also:
+    http://gaia.am.ub.es/GUMS-10/ : Gaia GUMS-10 statistics
+
+Byte-by-byte Description of file: gum_mw.sam gum_lmc.sam gum_smc.sam
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label    Explanations
+--------------------------------------------------------------------------------
+   1- 19  A19   ---     ID       source identifier (sourceExtendedId)
+  21- 34 F14.10 deg     RA2kdeg  Right ascension ICRS, Epoch=J2000 (G1)
+  36- 49 F14.10 deg     DE2kdeg  Declination ICRS, Epoch=J2000 (G1)
+  51- 56  F6.3  mag     VMAG     V-band absolute magnitude (meanAbsoluteV)
+  58- 63  F6.3  mag     Gmag     Gaia G-band magnitude (350-1050nm) (magG)
+  65- 70  F6.3  mag     GBmag    Gaia Gbp band magnitude (350-770nm) (magGBp)
+  72- 77  F6.3  mag     GRmag    Gaia Grp band magnitude (650-1050nm) (magGRp)
+  79- 84  F6.3  mag     Gsmag    Gaia Grvs magnitude (860+/-28nm) (magGRvs)
+  86- 99 F14.10 deg     RAdeg    Right ascension (ICRS, Epoch=J2010) (alpha)
+ 101-114 F14.10 deg     DEdeg    Declination (ICRS, Epoch=J2010) (delta)
+ 116-122  F7.1  pc      r        Barycentric distance (distance)
+ 124-132  F9.3 mas/yr   pmRA     Proper motion in RA (*cos(DE)) (muAlpha)
+ 134-142  F9.3 mas/yr   pmDE     Proper motion in Declination (muDelta)
+ 144-150  F7.1  km/s    RV       Barycentric radial velocity (radialVelocity)
+ 152-157  F6.3  mag     V-I      Intrinsic color V-I (colorVminusI)
+ 159-163  F5.3  mag     Av       Absorption (Av)
+ 165-170  F6.3  Gyr     Age      Estimated age (age)
+ 172-176  F5.2  [Sun]   [a/Fe]   {alpha}-elements enhancement (alphaFe)
+ 178-181  F4.2  ---     bAlb     [0/1] Bond albedo (for exoplanet) (bondAlbedo)
+ 183-187  F5.3  ---     e        Eccentricity (for binaries) (eccentricity)
+ 189-193  F5.2  [Sun]   [Fe/H]   Metallicity [Fe/H] (feH)
+     195  I1    ---     fI       [0,1] 1 (true) if interacting with a companion
+                                 (flagInteracting)
+ 197-200  F4.2  ---     gAlb     Geometric albedo (for exoplanet) (geomAlbedo)
+     202  I1    ---     fm       [0,1] 1 (true) if photocenter moves
+                                 (hasPhotocenterMotion)
+     204  I1    ---     Host     Host galaxy: 1=Milky Way, 2=SMC, 3=LMC (host)
+ 206-209  F4.1  deg     i        Orbit Inclination (inclination)
+ 211-216  F6.3 [cm/s2]  logg     Gravity (log) (logg)
+ 218-222  F5.1  deg     Omega    Longitude of ascending node {Omega}
+                                 (longitudeAscendingNode)
+ 224-232  F9.4  Sun     Mass     Stellar mass (mass)
+ 234-239  F6.3  mag     Mbol     Bolometric absolute magnitude (mbol)
+     241  I1    ---     nc       [1-5] Number of components in the system
+     243  I1    ---     nt       [1-5] Total number of objects in the system
+ 245-255  E11.6 d       P        Orbital period (orbitPeriod)
+ 257-261  F5.1  deg     omega    Periastron argument {omega}(periastronArgument)
+ 263-273  E11.5 d       T0       Periastron date (MJD) (periastronDate)
+ 275-277  F3.1  ---     Phase    [0/1] Phase if an exoplanet (phase)
+ 279-280  I2    ---     Pop      [1/3]?=99 Stellar population the object
+                                        belongs to (population)
+ 282-288  F7.4  ---     BeEnv    Envelope characteristic for Be star (Renv/R*)
+                                 (rEnvRStar)
+ 290-300  E11.4 Rsun    Radius   Stellar radius (radius)
+ 302-312  E11.4 au      a        Semi-major axis (in binary system)
+                                 (semimajorAxis)
+ 314-319  I6    K       Teff     Effective temperature (teff)
+ 321-326  F6.3  mag     Vamp     Variability amplitude (variabilityAmplitude)
+ 328-336  F9.5  d       Vper     Variability period (variabilityPeriod)
+ 338-342  F5.3  ---     Vphase   [0/1] Variability phase (variabilityPhase)
+ 344-347  A4    ---     Vtype    Variability type (variabilityType) (2)
+ 349-353  F5.1  km/s    vsini    Rotational velocity
+ 355-364  I10   ---     recno    [1/2143475885] Original record number
+--------------------------------------------------------------------------------
+Note (2): variability types are:
+   Ceph = Cepheids (pulsating supergiants)
+   delt = {delta} Sct-type (fainter and shorter periods that Cepheids)
+   RRLy = RR Lyr-type, sub-classified in RRab (asymmetric) or RRc (symmetric)
+   gamm = {gamma} Dor-type (non-radial pulsations)
+   RoAp = rapidly oscillating Ap stars
+   ZZce = pulsating white dwarfs
+   Mira = Mira Ceti type (Cool red supergiants)
+   semi = semiregular, usually red giants or supergiants
+   ACV  = {alpha}^2^ CVn-type (strong magnetic field)
+   Flar = flare stars (magnetic reconnection in dM stars)
+   Nova = classical nova (white dwarf accreting matter from its companion)
+   DN   = dwarf novae (white dwarf accreting matter with instable disk)
+   EB   = eclipsing binary
+   micr = microlensing event
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: gum_gal.sam
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 19  A19   ---     ID        Source identifier (sourceExtendedId)
+  21- 34 F14.10 deg     RA2kdeg   Right ascension ICRS, Epoch=J2000 (G1)
+  36- 49 F14.10 deg     DE2kdeg   Declination ICRS, Epoch=J2000 (G1)
+  51- 57  F7.3  mag     Vmag      V-band intrinsic (extinction free) apparent
+                                  mean magnitude (meanAbsoluteV)
+  59- 64  F6.3  mag     Gmag      Gaia G-band magnitude (350-1050nm) (magG)
+  66- 71  F6.3  mag     GBmag     Gaia Gbp band magnitude (350-770nm) (magGBp)
+  73- 78  F6.3  mag     GRmag     Gaia Grp band magnitude (650-1050nm) (magGRp)
+  80- 85  F6.3  mag     Gsmag     Gaia Grvs magnitude (860+/-28nm) (magGRvs)nm)
+  87-100 F14.10 deg     RAdeg     Right ascension (ICRS, Epoch=J2010) (alpha)
+ 102-115 F14.10 deg     DEdeg     Declination (ICRS, Epoch=J2010) (delta)
+ 117-128  E12.4 pc      r         Barycentric distance (distance)
+ 130-135  F6.3  mas/yr  pmRA      Proper motion in RA (*cos(DE)) (muAlpha)
+ 137-142  F6.3  mas/yr  pmDE      Proper motion in Declination (muDelta)
+ 144-151  F8.1  km/s    RV        Barycentric radial velocity (radialVelocity)
+ 154-155  I2    ---     SNID      [-1] Attached supernova ID (not filled)
+ 157-161  F5.3  mag     V-I       Intrinsic color V-I (colorVminusI)
+     163  I1    ---     Htype     [0-8] Hubble type (hubbleType) (3)
+ 165-170  F6.3  mag     Av        Absorption in the V-band
+ 172-179  F8.6  ---     z         Redshift (redShift)
+ 181-186  F6.4  ---     B/T       [0,1] Bulge to total flux ratio (4)
+ 188-193  F6.4  arcsec  Brad      Bulge equivalent radius (4)
+ 195-200  F6.4  ---     Bb/a      [0,1] Bulge aspect ratio b/a (4)
+ 202-208  F7.2  deg     Bpa       [-180/180] Bulge position angle (4)
+ 210-216  F7.4  arcsec  Dsize     Disk scale length (4)
+ 218-223  F6.4  ---     Db/a      [0,1] Disk aspect ratio b/a (4)
+ 225-231  F7.2  deg     Dpa       Disk position angle (4)
+ 233-240  I8    ---     recno     [1/37831197] Original record number
+--------------------------------------------------------------------------------
+Note (3): the 8 classes are:
+   0..7 = E2, E-S0, Sa, Sb, Sbc, Sc, Sd, Im
+      8 = QSPG: Quenched Star Forming Galaxies (2009A&A...504.1071T)
+Note (4): these parameters represent the SkyMaker shape parameters.
+     Note that the position angles are measured with respect to the RA axis.
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: gum_qso.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 12  F12.8 deg     RA2kdeg   Right ascension (ICRS), at Epoch J2000 (G1)
+  14- 25  F12.8 deg     DE2kdeg   Declination (ICRS), at Epoch J2000 (G1)
+  27- 38  F12.8 deg     RAdeg     Right ascension (ICRS), at Epoch J2010 (alpha)
+  40- 51  F12.8 deg     DEdeg     Right ascension (ICRS), at Epoch J2010 (delta)
+  54- 58  I5    Mpc     r         Barycentric distance (distance)
+  60- 68  F9.5  mas/yr  pmRA      Proper motion in RA (*cos(DE)) (muAlpha)
+  70- 78  F9.5  mas/yr  pmDE      Proper motion in Declination (muDelta)
+  81- 86  I6    km/s    RV        Barycentric radial velocity (radialVelocity)
+  88- 93  F6.3  mag     Gmag      Gaia G-band magnitude (350-1050nm) (magG)
+  95-100  F6.3  mag     GBmag     Gaia Gbp band magnitude (350-770nm) (magGBp)
+ 102-107  F6.3  mag     GRmag     Gaia Grp band magnitude (650-1050nm) (magGRp)
+ 109-114  F6.3  mag     Gsmag     Gaia/Grvs band magnitude (850-880nm) (magGRvs)
+ 116-121  F6.3  mag     Av        Galactic absorption in the V-band
+ 124-128  F5.3  ---     z         Redshift (redShift)
+ 130-135  F6.3  ---     slope     Slope of the continuum
+ 138-142  I5    ---     W         Total equivalent width of the emission lines
+ 144-161  A18   ---     ID        Source identifier (sourceExtendedId)
+ 168-186  A19   ---     objID     GUMS source identifier (sourceId)
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: gum_sn.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 14 F14.10 deg     RA2kdeg   Right ascension (ICRS), at Epoch J2000 (G1)
+  16- 29 F14.10 deg     DE2kdeg   Declination (ICRS), at Epoch J2000 (G1)
+  31- 44 F14.10 deg     RAdeg     Right ascension (ICRS), at Epoch J2010 (alpha)
+  46- 59 F14.10 deg     DEdeg     Right ascension (ICRS), at Epoch J2010 (delta)
+  61- 67  F7.2  Mpc     r         Barycentric distance distance)
+  69- 77  E9.3  mas/yr  pmRA      Proper motion in RA (*cos(DE)) (muAlpha)
+  79- 87  E9.3  mas/yr  pmDE      Proper motion in Declination (muDelta)
+  90- 95  I6    km/s    RV        Barycentric radial velocity (radialVelocity)
+  97-102  F6.2  mag     VMAG      V-band absolute magnitude (meanAbsoluteV)
+ 104-111  F8.5  ---     z         Redshift (redShift)
+ 113-116  A4    ---     SNt       Type of the supernova (gmdbtype)
+ 118-135  A18   ---     ID        Source identifier (sourceExtendedId)
+ 142-160  A19   ---     objID     GUMS extended source identifier (sourceId)
+--------------------------------------------------------------------------------
+
+Global Notes:
+Note (G1): position added by the CDS
+
+History:
+  * 11-May-2012: installed for private access only
+  * 10-Aug-2012: installed for public access, without the supernova file
+  * 14-Sep-2012: installed in 3 files for stars (MW, LMC, SMC).
+       The "shape parameters" describing the galaxies have been described.
+================================================================================
+(End)                  Francois Ochsenbein,  Gilles Landais [CDS]    11-May-2012
