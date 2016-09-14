@@ -1,3 +1,8 @@
 .ipynb_checkpoints
 data/synthetic/VI_137
 *.tar.gz
+*.csv
+*.gz
+*.tsv
+*.fits
+results/
