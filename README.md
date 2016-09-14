@@ -1,5 +1,10 @@
 adrasteia
 ===
+exploring Gaia data with Pandas and Jupyter Notebooks
 
-side projects are ~~never~~ [sometimes](https://youtu.be/RZbqJxQJ5LY?t=22m13s) successful
+gully, September 14, 2016
 
+
+Exploring data with the flat files from the Gaia Archive:
+- [TGAS](http://cdn.gea.esac.esa.int/Gaia/tgas_source/)
+- [GaiaSource](http://cdn.gea.esac.esa.int/Gaia/gaia_source/)
