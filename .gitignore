@@ -6,3 +6,5 @@ data/synthetic/VI_137
 *.tsv
 *.fits
 results/
+
+notebooks/deprecated

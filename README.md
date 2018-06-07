@@ -1,16 +1,12 @@
 adrasteia
 ===
-exploring Gaia data with Pandas and Jupyter Notebooks
-
-gully, September 14, 2016
-
+exploring Gaia DR1 and DR2 data with Pandas, Jupyter Notebooks, and dask
 
 Exploring data with the flat files from the Gaia Archive:
-- [TGAS](http://cdn.gea.esac.esa.int/Gaia/tgas_source/)
-- [GaiaSource](http://cdn.gea.esac.esa.int/Gaia/gaia_source/)
+- [Gaia Data](http://cdn.gea.esac.esa.int/Gaia/)
 
 
-# notebooks
+## Jupyter notebooks
 
 The Jupyter notebooks show my exploratory analysis of Gaia DR1 in September 2016 and Gaia DR2 in May 2018.  The notebooks are exploratory and in some cases un-commented and hard-coded.  Some pieces of data retrieval and exploratory analysis may be useful.
 
